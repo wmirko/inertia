@@ -14,3 +14,7 @@ php -m
 apt install php[version]-[modul
 
 ]
+
+#Path
+* echo $PATH
+* export PATH=$PATH:~/.composer/vendor/bin
