@@ -17,4 +17,11 @@ apt install php[version]-[modul
 
 #Path
 * echo $PATH
-* export PATH=$PATH:~/.composer/vendor/bin
+* # edit ~/.profile
+* export PATH=$PATH:~/.config/composer/vendor/bin/
+* # reload
+* source ~/.profile
+
+
+# laravel
+composer global require laravel/installer
