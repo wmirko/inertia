@@ -1,7 +1,10 @@
 # inertia
 
 # /.ssh
-ssh-keygen -t ed25519 -C "your_email@example.com"
+* ssh-keygen -t ed25519 -C "your_email@example.com"
+* eval `ssh-agent -s`
+* ssh-add -L
+
 
 # add key to service
 ssh-add
