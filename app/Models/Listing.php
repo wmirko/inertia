@@ -33,7 +33,7 @@ class Listing {
         return $this;
     }
     public function setDescription(string $description){
-        $this->id = $description;
+        $this->description = $description;
         return $this;
     }
 
