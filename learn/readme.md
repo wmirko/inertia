@@ -53,7 +53,7 @@
 * use gigs;
 
 # artisan
-* php artisan make:migration create_listings_tables
+* php artisan make:migration create_listings_table
 * php artisan migrate // runs all migration/files
 
 
