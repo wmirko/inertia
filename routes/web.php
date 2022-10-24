@@ -19,9 +19,9 @@ Route::get('/', function () {
 });
 
 
-Route::get('listings', function() {
+Route::get('listing', function() {
     return view('listings', [
         'heading' => 'topics from the past',
-        'listings' => Listing::getAll()
+        'listings' => Listing::all()
     ]);
 });
