@@ -23,4 +23,4 @@ Route::get('/', function () {
 Route::get('/', [ListingController::class, 'index']);
 
 
-Route::get('/{id}', [ListingController::class, 'show']);
+Route::get('/{listing}', [ListingController::class, 'show']);

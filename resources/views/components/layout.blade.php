@@ -28,8 +28,7 @@
    @include('partials._search')
    @include('partials._hero')
    <div style="display: flex; justify-content: space-between; flex-direction: row; flex-flow: column wrap;">
-    @yield('listings')
-    @yield('listing')
+      {{$slot}}
    </div>
 </body>
 </html>
