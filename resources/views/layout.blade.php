@@ -25,10 +25,11 @@
 </head>
 <body>
    @include('navbar')
-
-   <div style="display: flex; justify-content: space-between; flex-direction: row; flex-flow: column wrap; width:80%;">
+   @include('partials._search')
+   @include('partials._hero')
+   <div style="display: flex; justify-content: space-between; flex-direction: row; flex-flow: column wrap;">
     @yield('listings')
-
+    @yield('listing')
    </div>
 </body>
 </html>
