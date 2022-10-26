@@ -91,6 +91,10 @@
 # artisan factory
 * ``` php artisan make:factory ListingFactory ```
 
+# components
+* anlegen: views/components
+* verwenden: name der component: <x-[na me]> @props (notwendige variablen, die in der template verwendet werden können)
+* schachtelungen sind möglich s.'x-card'
 
 # ablauf
 * model Listing angelegt
@@ -99,3 +103,5 @@
 * using eleqent modell
 * create listing factory
 * create a layout/theme
+* components
+* controller
