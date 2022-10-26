@@ -98,6 +98,14 @@
 
 # controller
 * ``` php artisan make:controller [controllerName] ```
+* create common resource routes:
+    * index - show all
+    * show -  show single
+    * create - show form to create single
+    * store - store new 
+    * edit - show form editing 
+    * update - update existing
+    * destroy - destroy existing
 
 # ablauf
 * model Listing angelegt
