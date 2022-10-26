@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('company');
             $table->string('location');
+            $table->string('email');
             $table->string('website');
             $table->longText('description');
             $table->timestamps();
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('listings_tables');
+        Schema::dropIfExists('listings');
     }
 };
