@@ -88,9 +88,14 @@
 * ``` systemctl restart php8.1-fpm.service  ```
 * ``` php artisan migrate:refresh --seed ``` 
 
+# artisan factory
+* ``` php artisan make:factory ListingFactory ```
+
 
 # ablauf
 * model Listing angelegt
 * route erzeugen
 * db migrations via artisan
-* using eleqent modell 
+* using eleqent modell
+* create listing factory
+* create a layout/theme
