@@ -22,5 +22,9 @@ Route::get('/', function () {
 */
 Route::get('/', [ListingController::class, 'index']);
 
+// position is important
+Route::get('/create', [ListingController::class, 'create']);
 
 Route::get('/{listing}', [ListingController::class, 'show']);
+
+
