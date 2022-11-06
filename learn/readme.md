@@ -3,6 +3,8 @@
 * pos1 --> jump to beginning of line
 * shift + pos1 --> jump to beginning of line and mark text (same with 'ende')
 
+# git
+* git diff --name-only --cached // get staged files(name)
 
 
 # ssh
@@ -12,12 +14,13 @@
 * ssh add [pfad zum private.key]
 * sudo ufw allow ssh // hat mich nerven gekostet ..
 
-
 # valent
 * valent start
 * valent share
-
-
+* php artisan route:clear
+* php artisan route:cache // changes @routes
+* php artisan config:clear // changes @env
+* php artisan config:cache
 
 # laravel
 ## routes
@@ -45,17 +48,16 @@
 * php artisan make:model Listing
 * /app/model
 
-
 # mysql
 * SELECT DATABASE();
 * SHOW DATABASES;
 * SHOW TABLES;
 * use gigs;
+* UPDATE tb SET column = value Where condition
 
 # artisan
 * php artisan make:migration create_listings_table
 * php artisan migrate // runs all migration/files
-
 
 # db migrations
 * up- and down method
@@ -107,6 +109,16 @@
     * update - update existing
     * destroy - destroy existing
 
+    * in dem methodenauftruf des controllers kann man auch das Request-Object als PArameter übergeben und sich mit 'dd' ausgeben lassen
+    * gleiches lässt sich auch mit der requesthelper-methode erzielen, dabei muss das Request-Object nicht als parameter übergeben werden - request()
+
+
+# Filtering 
+*  ```  public function scopeFilter($query, array $filters)  ``` - methode in der class angelegt
+* somit besteht zugriff im controller auf die Filtermethode: ```  Listing::latest()->filter( (request(['tags'])) )->get()  ```
+* recomendation 'clockwork '
+
+
 # ablauf
 * model Listing angelegt
 * route erzeugen
@@ -116,3 +128,10 @@
 * create a layout/theme
 * components
 * controller
+* Filtering
+* create new Funktionality (new route, new controller, new view) --> new Form
+
+
+
+filter
+1:59:47
