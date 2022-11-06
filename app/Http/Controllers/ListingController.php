@@ -14,16 +14,18 @@ class ListingController extends Controller
     {
         return view('listings.index', [
             'heading' => 'topics from the presnet',
-            'listings' => Listing::all()
+            // 'listings' => Listing::all()
+            'listings' => Listing::latest()->filter( 
+                (request(['tag','search'])) )->get()
         ]);
     }
 
-        // get single object
-        public function show(Listing $listing) 
-        {    
-            return view('listings.show', [
-                'listing' => $listing
-            ]);
-        }
+    // get single object
+    public function show(Listing $listing) 
+    {    
+        return view('listings.show', [
+            'listing' => $listing
+        ]);
+    }
 
 }
